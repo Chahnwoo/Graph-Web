@@ -1,0 +1,25 @@
+{
+    "name": "MATH 1910 - Calculus for Engineers",
+    "crosslisted": [],
+    "distributions": [
+        "SMR-AS"
+    ],
+    "seasons_offered": [
+        "Fall",
+        "Spring",
+        "Summer"
+    ],
+    "credits": 4,
+    "grading": "Student option grading",
+    "forbidden_overlaps": [
+        "MATH 1120",
+        "MATH 1910"
+    ],
+    "forbidden_overlaps_str": "Forbidden Overlap: due to an overlap in content, students will not receive credit for both MATH 1120 and MATH 1910.",
+    "prerequisites": [],
+    "prerequisites_str": "Prerequisite: three years high school mathematics, including trigonometry and logarithms, and at least one course in differential and integral calculus, or equivalent AP credit.",
+    "remaining_text": "For guidance in selecting an appropriate course, please consult First Steps in Math . Staff. Essentially a second course in calculus. Topics include techniques of integration, finding areas and volumes by integration, exponential growth, partial fractions, infinite sequences and series, tests of convergence, and power series.",
+    "raw": "MATH 1910 - Calculus for Engineers\n(SMR-AS)\nFall, Spring, Summer.  4 credits. Student option grading.\nForbidden Overlap: due to an overlap in content, students will not receive credit for both\nMATH 1120\nand MATH 1910.\nPrerequisite: three years high school mathematics, including trigonometry and logarithms, and at least one course in differential and integral calculus, or equivalent AP credit. For guidance in selecting an appropriate course, please consult\nFirst Steps in Math\n.\nStaff.\nEssentially a second course in calculus. Topics include techniques of integration, finding areas and volumes by integration, exponential growth, partial fractions, infinite sequences and series, tests of convergence, and power series.",
+    "all_prereqs": [],
+    "prereq_tree": {}
+}

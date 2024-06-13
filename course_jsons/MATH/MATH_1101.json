@@ -1,0 +1,20 @@
+{
+    "name": "MATH 1101 - Calculus Preparation",
+    "crosslisted": [],
+    "distributions": [],
+    "seasons_offered": [
+        "Fall"
+    ],
+    "credits": 2,
+    "grading": "Letter grades only",
+    "forbidden_overlaps": [
+        "MATH 1101"
+    ],
+    "forbidden_overlaps_str": "",
+    "prerequisites": [],
+    "prerequisites_str": "",
+    "remaining_text": "Staff. Introduces topics in calculus: limits, rates of change, definition of and techniques for finding derivatives, relative and absolute extrema, and applications. The calculus content of the course is similar to 1/3 of the content covered in MATH 1106 and MATH 1110 . In addition, the course includes a variety of topics of algebra, with emphasis on the development of linear, power, exponential, logarithmic, and trigonometric functions. Because of the strong emphasis on graphing, students will have a better understanding of asymptotic behavior of these functions.",
+    "raw": "MATH 1101 - Calculus Preparation\nFall.  2 credits. Letter grades only.\nStaff.\nIntroduces topics in calculus: limits, rates of change, definition of and techniques for finding derivatives, relative and absolute extrema, and applications. The calculus content of the course is similar to 1/3 of the content covered in\nMATH 1106\nand\nMATH 1110\n. In addition, the course includes a variety of topics of algebra, with emphasis on the development of linear, power, exponential, logarithmic, and trigonometric functions. Because of the strong emphasis on graphing, students will have a better understanding of asymptotic behavior of these functions.",
+    "all_prereqs": [],
+    "prereq_tree": {}
+}

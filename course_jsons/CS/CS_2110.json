@@ -1,0 +1,168 @@
+{
+    "name": "CS 2110 - Object-Oriented Programming and Data Structures",
+    "crosslisted": [
+        "ENGRD 2110"
+    ],
+    "distributions": [
+        "SMR-AS"
+    ],
+    "seasons_offered": [
+        "Fall",
+        "Spring",
+        "Summer"
+    ],
+    "credits": 4,
+    "grading": "Student option grading (no audit)",
+    "forbidden_overlaps": [
+        "CS 2110"
+    ],
+    "forbidden_overlaps_str": "",
+    "prerequisites": [
+        "CS 1110",
+        "CS 1112"
+    ],
+    "prerequisites_str": "Prerequisite: CS 1110 or CS 1112 or equivalent course on programming in a procedural language.",
+    "remaining_text": "Staff. Intermediate programming in a high-level language and introduction to software engineering. Topics include object-oriented programming (objects, classes, subtypes, encapsulation, polymorphism), program correctness (specifications, invariants, testing), algorithm analysis (asymptotic complexity, big “O” notation), recursion, data structures (lists, trees, stacks, queues, heaps, hash tables, graphs), iteration and searching/sorting, graph algorithms, and concurrent and event-driven programming (graphical user interfaces, synchronization). Java is the principal programming language. Outcome 1: Employ recursion and object-oriented programming concepts (e.g., classes, interfaces, polymorphism, inheritance) to solve computational problems. Outcome 2: Design, implement, and verify nontrivial Java programs (roughly 1000 lines of code), starting from an English language specification, leveraging features like encapsulation and unit tests to improve maintainability. Outcome 3: Build and modify event-driven graphical user interfaces (GUIs) expressed in Java. Outcome 4: Analyze the asymptotic complexity of algorithms and programs to evaluate their running times and memory requirements. Outcome 5: Implement basic data structures taught in the course (linked lists, binary search trees, heaps, hash tables, adjacency lists) and be able to use them in programs.",
+    "raw": "CS 2110 - Object-Oriented Programming and Data Structures\n(crosslisted)\nENGRD 2110\n(SMR-AS)\nFall, Spring, Summer.  4 credits. Student option grading (no audit).\nPrerequisite:\nCS 1110\nor\nCS 1112\nor equivalent course on programming in a procedural language.\nStaff.\nIntermediate programming in a high-level language and introduction to software engineering. Topics include object-oriented programming (objects, classes, subtypes, encapsulation, polymorphism), program correctness (specifications, invariants, testing), algorithm analysis (asymptotic complexity, big “O” notation), recursion, data structures (lists, trees, stacks, queues, heaps, hash tables, graphs), iteration and searching/sorting, graph algorithms, and concurrent and event-driven programming (graphical user interfaces, synchronization). Java is the principal programming language.\nOutcome 1: Employ recursion and object-oriented programming concepts (e.g., classes, interfaces, polymorphism, inheritance) to solve computational problems.\nOutcome 2: Design, implement, and verify nontrivial Java programs (roughly 1000 lines of code), starting from an English language specification, leveraging features like encapsulation and unit tests to improve maintainability.\nOutcome 3: Build and modify event-driven graphical user interfaces (GUIs) expressed in Java.\nOutcome 4: Analyze the asymptotic complexity of algorithms and programs to evaluate their running times and memory requirements.\nOutcome 5: Implement basic data structures taught in the course (linked lists, binary search trees, heaps, hash tables, adjacency lists) and be able to use them in programs.",
+    "all_prereqs": [
+        "CS 1110",
+        "CS 1112",
+        "MATH 1101",
+        "MATH 1110",
+        "MATH 1910"
+    ],
+    "prereq_tree": {
+        "CS 1110": {
+            "name": "CS 1110 - Introduction to Computing: A Design and Development Perspective",
+            "crosslisted": [],
+            "distributions": [
+                "SMR-AS"
+            ],
+            "seasons_offered": [
+                "Fall",
+                "Spring",
+                "Summer"
+            ],
+            "credits": 4,
+            "grading": "Fall, Summer: letter grades only (no audit); Spring: student option grading (no audit)",
+            "forbidden_overlaps": [
+                "CS 1110",
+                "CS 1112"
+            ],
+            "forbidden_overlaps_str": "Forbidden Overlap: due to an overlap in content, students will not receive credit for both CS 1110 and CS 1112.",
+            "prerequisites": [],
+            "prerequisites_str": "",
+            "remaining_text": "Students may not enroll in CS 1110 if they have taken or are also enrolled in CS 2110 / ENGRD 2110 , CS 2112 , or have taken or are currently enrolled in a course offered or cross-listed with a CS number 3000 or above. (Students looking to learn Python rather than learn how to program should take CS 1133 instead.) Students who have affiliated with the computer-science major may not enroll. Assumes basic high school mathematics. No calculus or programming experience required. Fall: W. White; Spring: Staff; Summer: Staff. Programming and problem solving using Python. Emphasizes principles of software development, style, and testing. Topics include procedures and functions, iteration, recursion, arrays and vectors, strings, an operational model of procedure and function calls, algorithms, exceptions, object-oriented programming. Weekly labs provide guided practice on the computer, with staff present to help. Outcome 1: Be fluent in the use of procedural statements -assignments, conditional statements, loops, method calls- and  arrays. Outcome 2: Be able to design, code, and test small Python programs that meet requirements expressed in English. This includes a basic understanding of top-down design. Outcome 3: Understand the concepts of object-oriented programming as used in Python: classes, subclasses, inheritance, and overriding. Outcome 4: Have knowledge of basic searching and sorting algorithms. Have knowledge of the basics of vector computation.",
+            "raw": "CS 1110 - Introduction to Computing: A Design and Development Perspective\n(SMR-AS)\nFall, Spring, Summer.  4 credits. Fall, Summer: letter grades only (no audit); Spring: student option grading (no audit).\nForbidden Overlap: due to an overlap in content, students will not receive credit for both CS 1110 and CS 1112. Students may not enroll in CS 1110 if they have taken or are also enrolled in\nCS 2110\n/\nENGRD 2110\n,\nCS 2112\n, or have taken or are currently enrolled in a course offered or cross-listed with a CS number 3000 or above. (Students looking to learn Python rather than learn how to program should take\nCS 1133\ninstead.) Students who have affiliated with the computer-science major may not enroll.\nAssumes basic high school mathematics. No calculus or programming experience required.\nFall: W. White; Spring: Staff; Summer: Staff.\nProgramming and problem solving using Python. Emphasizes principles of software development, style, and testing. Topics include procedures and functions, iteration, recursion, arrays and vectors, strings, an operational model of procedure and function calls, algorithms, exceptions, object-oriented programming. Weekly labs provide guided practice on the computer, with staff present to help.\nOutcome 1: Be fluent in the use of procedural statements -assignments, conditional statements, loops, method calls- and  arrays.\nOutcome 2: Be able to design, code, and test small Python programs that meet requirements expressed in English. This includes a basic understanding of top-down design.\nOutcome 3: Understand the concepts of object-oriented programming as used in Python: classes, subclasses, inheritance, and overriding.\nOutcome 4: Have knowledge of basic searching and sorting algorithms. Have knowledge of the basics of vector computation.",
+            "all_prereqs": [],
+            "prereq_tree": {}
+        },
+        "CS 1112": {
+            "name": "CS 1112 - Introduction to Computing: An Engineering and Science Perspective",
+            "crosslisted": [],
+            "distributions": [
+                "SMR-AS"
+            ],
+            "seasons_offered": [
+                "Fall",
+                "Spring"
+            ],
+            "credits": 4,
+            "grading": "Student option grading (no audit)",
+            "forbidden_overlaps": [
+                "CS 1110",
+                "CS 1112"
+            ],
+            "forbidden_overlaps_str": "Forbidden Overlap: due to an overlap in content, students will not receive credit for both CS 1110 and CS 1112.",
+            "prerequisites": [
+                "MATH 1110",
+                "MATH 1910"
+            ],
+            "prerequisites_str": "Prerequisite: MATH 1110 , MATH 1910 , or equivalent.",
+            "remaining_text": "Students may not enroll in CS 1110 if they have taken or are also enrolled in CS 2110/ENGRD 2110, CS 2112, or have taken or are currently enrolled in a course offered or cross-listed with a CS number 3000 or above. (Students looking to learn Python rather than learn how to program should take CS 1133 instead.) Students who have affiliated with the computer-science major may not enroll.\nCo-enrolling in MATH 1110 or MATH 1910 is acceptable assuming that student is comfortable with the concepts of series summation and derivatives. No prior programming experience required. Staff. Programming and problem solving using Python. Emphasizes the systematic development of algorithms and programs. Topics include iteration, functions, arrays, strings, recursion, object-oriented programming, algorithms, and data handling and visualization. Assignments are designed to build an appreciation for complexity, dimension, randomness, simulation, and the role of approximation in engineering and science. Weekly discussion section provides guided practice on the computer, with staff present to help. NO programming experience is necessary; some knowledge of Calculus is required. Outcome 1: Be fluent in the use of procedural statements-assignments, conditional statements, loops, function calls-and arrays. Be able to design, code, and test small Python programs that meet requirements expressed in English. This includes a basic understanding of top-down design. Outcome 2: Understand the concepts of object-oriented programming as used in Python: classes, subclasses, inheritance, and overriding. Outcome 3: Have knowledge of basic sorting and searching algorithms. Outcome 4: Have a working familiarity with libraries such as NumPy and Matplotlib for scientific computation and data visualization.",
+            "raw": "CS 1112 - Introduction to Computing: An Engineering and Science Perspective\n(SMR-AS)\nFall, Spring.  4 credits. Student option grading (no audit).\nForbidden Overlap: due to an overlap in content, students will not receive credit for both CS 1110 and CS 1112. Students may not enroll in CS 1110 if they have taken or are also enrolled in CS 2110/ENGRD 2110, CS 2112, or have taken or are currently enrolled in a course offered or cross-listed with a CS number 3000 or above. (Students looking to learn Python rather than learn how to program should take CS 1133 instead.) Students who have affiliated with the computer-science major may not enroll.\nPrerequisite:\nMATH 1110\n,\nMATH 1910\n, or equivalent.   Co-enrolling in MATH 1110 or MATH 1910 is acceptable assuming that student is comfortable with the concepts of series summation and derivatives. No prior programming experience required.\nStaff.\nProgramming and problem solving using Python. Emphasizes the systematic development of algorithms and programs. Topics include iteration, functions, arrays, strings, recursion, object-oriented programming, algorithms, and data handling and visualization. Assignments are designed to build an appreciation for complexity, dimension, randomness, simulation, and the role of approximation in engineering and science. Weekly discussion section provides guided practice on the computer, with staff present to help. NO programming experience is necessary; some knowledge of Calculus is required.\nOutcome 1: Be fluent in the use of procedural statements-assignments, conditional statements, loops, function calls-and arrays. Be able to design, code, and test small Python programs that meet requirements expressed in English. This includes a basic understanding of top-down design.\nOutcome 2: Understand the concepts of object-oriented programming as used in Python: classes, subclasses, inheritance, and overriding.\nOutcome 3: Have knowledge of basic sorting and searching algorithms.\nOutcome 4: Have a working familiarity with libraries such as NumPy and Matplotlib for scientific computation and data visualization.",
+            "all_prereqs": [
+                "MATH 1101",
+                "MATH 1110",
+                "MATH 1910"
+            ],
+            "prereq_tree": {
+                "MATH 1110": {
+                    "name": "MATH 1110 - Calculus I",
+                    "crosslisted": [],
+                    "distributions": [
+                        "SMR-AS"
+                    ],
+                    "seasons_offered": [
+                        "Fall",
+                        "Spring",
+                        "Summer"
+                    ],
+                    "credits": 4,
+                    "grading": "Student option grading",
+                    "forbidden_overlaps": [
+                        "MATH 1106",
+                        "MATH 1110"
+                    ],
+                    "forbidden_overlaps_str": "Forbidden Overlap: due to an overlap in content, students will not receive credit for both MATH 1106 and MATH 1110.",
+                    "prerequisites": [
+                        "MATH 1101"
+                    ],
+                    "prerequisites_str": "Prerequisite: three years of high school mathematics (including trigonometry and logarithms) or a precalculus course (e.g., MATH 1101 ).",
+                    "remaining_text": "MATH 1110 can serve as a one-semester introduction to calculus or as part of a two-semester sequence in which it is followed by MATH 1120 . For guidance in selecting an appropriate course, please consult First Steps in Math . Staff. Topics include functions and graphs, limits and continuity, differentiation and integration of algebraic, trigonometric, inverse trig, logarithmic, and exponential functions; applications of differentiation, including graphing, max-min problems, tangent line approximation, implicit differentiation, and applications to the sciences; the mean value theorem; and antiderivatives, definite and indefinite integrals, the fundamental theorem of calculus, and the area under a curve.",
+                    "raw": "MATH 1110 - Calculus I\n(SMR-AS)\nFall, Spring, Summer.  4 credits. Student option grading.\nForbidden Overlap: due to an overlap in content, students will not receive credit for both\nMATH 1106\nand MATH 1110.\nPrerequisite: three years of high school mathematics (including trigonometry and logarithms) or a precalculus course (e.g.,\nMATH 1101\n). MATH 1110 can serve as a one-semester introduction to calculus or as part of a two-semester sequence in which it is followed by\nMATH 1120\n. For guidance in selecting an appropriate course, please consult\nFirst Steps in Math\n.\nStaff.\nTopics include functions and graphs, limits and continuity, differentiation and integration of algebraic, trigonometric, inverse trig, logarithmic, and exponential functions; applications of differentiation, including graphing, max-min problems, tangent line approximation, implicit differentiation, and applications to the sciences; the mean value theorem; and antiderivatives, definite and indefinite integrals, the fundamental theorem of calculus, and the area under a curve.",
+                    "all_prereqs": [
+                        "MATH 1101"
+                    ],
+                    "prereq_tree": {
+                        "MATH 1101": {
+                            "name": "MATH 1101 - Calculus Preparation",
+                            "crosslisted": [],
+                            "distributions": [],
+                            "seasons_offered": [
+                                "Fall"
+                            ],
+                            "credits": 2,
+                            "grading": "Letter grades only",
+                            "forbidden_overlaps": [
+                                "MATH 1101"
+                            ],
+                            "forbidden_overlaps_str": "",
+                            "prerequisites": [],
+                            "prerequisites_str": "",
+                            "remaining_text": "Staff. Introduces topics in calculus: limits, rates of change, definition of and techniques for finding derivatives, relative and absolute extrema, and applications. The calculus content of the course is similar to 1/3 of the content covered in MATH 1106 and MATH 1110 . In addition, the course includes a variety of topics of algebra, with emphasis on the development of linear, power, exponential, logarithmic, and trigonometric functions. Because of the strong emphasis on graphing, students will have a better understanding of asymptotic behavior of these functions.",
+                            "raw": "MATH 1101 - Calculus Preparation\nFall.  2 credits. Letter grades only.\nStaff.\nIntroduces topics in calculus: limits, rates of change, definition of and techniques for finding derivatives, relative and absolute extrema, and applications. The calculus content of the course is similar to 1/3 of the content covered in\nMATH 1106\nand\nMATH 1110\n. In addition, the course includes a variety of topics of algebra, with emphasis on the development of linear, power, exponential, logarithmic, and trigonometric functions. Because of the strong emphasis on graphing, students will have a better understanding of asymptotic behavior of these functions.",
+                            "all_prereqs": [],
+                            "prereq_tree": {}
+                        }
+                    }
+                },
+                "MATH 1910": {
+                    "name": "MATH 1910 - Calculus for Engineers",
+                    "crosslisted": [],
+                    "distributions": [
+                        "SMR-AS"
+                    ],
+                    "seasons_offered": [
+                        "Fall",
+                        "Spring",
+                        "Summer"
+                    ],
+                    "credits": 4,
+                    "grading": "Student option grading",
+                    "forbidden_overlaps": [
+                        "MATH 1120",
+                        "MATH 1910"
+                    ],
+                    "forbidden_overlaps_str": "Forbidden Overlap: due to an overlap in content, students will not receive credit for both MATH 1120 and MATH 1910.",
+                    "prerequisites": [],
+                    "prerequisites_str": "Prerequisite: three years high school mathematics, including trigonometry and logarithms, and at least one course in differential and integral calculus, or equivalent AP credit.",
+                    "remaining_text": "For guidance in selecting an appropriate course, please consult First Steps in Math . Staff. Essentially a second course in calculus. Topics include techniques of integration, finding areas and volumes by integration, exponential growth, partial fractions, infinite sequences and series, tests of convergence, and power series.",
+                    "raw": "MATH 1910 - Calculus for Engineers\n(SMR-AS)\nFall, Spring, Summer.  4 credits. Student option grading.\nForbidden Overlap: due to an overlap in content, students will not receive credit for both\nMATH 1120\nand MATH 1910.\nPrerequisite: three years high school mathematics, including trigonometry and logarithms, and at least one course in differential and integral calculus, or equivalent AP credit. For guidance in selecting an appropriate course, please consult\nFirst Steps in Math\n.\nStaff.\nEssentially a second course in calculus. Topics include techniques of integration, finding areas and volumes by integration, exponential growth, partial fractions, infinite sequences and series, tests of convergence, and power series.",
+                    "all_prereqs": [],
+                    "prereq_tree": {}
+                }
+            }
+        }
+    }
+}

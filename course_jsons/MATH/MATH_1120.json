@@ -1,0 +1,130 @@
+{
+    "name": "MATH 1120 - Calculus II",
+    "crosslisted": [],
+    "distributions": [
+        "SMR-AS"
+    ],
+    "seasons_offered": [
+        "Fall",
+        "Spring"
+    ],
+    "credits": 4,
+    "grading": "Student option grading",
+    "forbidden_overlaps": [
+        "MATH 1120",
+        "MATH 1910"
+    ],
+    "forbidden_overlaps_str": "Forbidden Overlap: due to an overlap in content, students will not receive credit for both MATH 1120 and MATH 1910 .",
+    "prerequisites": [
+        "MATH 1110",
+        "MATH 1106"
+    ],
+    "prerequisites_str": "Prerequisite: MATH 1110 , excellent performance in MATH 1106 , or equivalent AP credit.",
+    "remaining_text": "For guidance in selecting an appropriate course, please consult First Steps in Math . Staff. Focuses on integration: applications, including volumes and arc length; techniques of integration, approximate integration with error estimates, improper integrals, differential equations and their applications. Also covers infinite sequences and series: definition and tests for convergence, power series, Taylor series with remainder, and parametric equations.",
+    "raw": "MATH 1120 - Calculus II\n(SMR-AS)\nFall, Spring.  4 credits. Student option grading.\nForbidden Overlap: due to an overlap in content, students will not receive credit for both MATH 1120 and\nMATH 1910\n.\nPrerequisite:\nMATH 1110\n, excellent performance in\nMATH 1106\n, or equivalent AP credit.   For guidance in selecting an appropriate course, please consult\nFirst Steps in Math\n.\nStaff.\nFocuses on integration: applications, including volumes and arc length; techniques of integration, approximate integration with error estimates, improper integrals, differential equations and their applications. Also covers infinite sequences and series: definition and tests for convergence, power series, Taylor series with remainder, and parametric equations.",
+    "all_prereqs": [
+        "MATH 1101",
+        "MATH 1106",
+        "MATH 1110"
+    ],
+    "prereq_tree": {
+        "MATH 1110": {
+            "name": "MATH 1110 - Calculus I",
+            "crosslisted": [],
+            "distributions": [
+                "SMR-AS"
+            ],
+            "seasons_offered": [
+                "Fall",
+                "Spring",
+                "Summer"
+            ],
+            "credits": 4,
+            "grading": "Student option grading",
+            "forbidden_overlaps": [
+                "MATH 1106",
+                "MATH 1110"
+            ],
+            "forbidden_overlaps_str": "Forbidden Overlap: due to an overlap in content, students will not receive credit for both MATH 1106 and MATH 1110.",
+            "prerequisites": [
+                "MATH 1101"
+            ],
+            "prerequisites_str": "Prerequisite: three years of high school mathematics (including trigonometry and logarithms) or a precalculus course (e.g., MATH 1101 ).",
+            "remaining_text": "MATH 1110 can serve as a one-semester introduction to calculus or as part of a two-semester sequence in which it is followed by MATH 1120 . For guidance in selecting an appropriate course, please consult First Steps in Math . Staff. Topics include functions and graphs, limits and continuity, differentiation and integration of algebraic, trigonometric, inverse trig, logarithmic, and exponential functions; applications of differentiation, including graphing, max-min problems, tangent line approximation, implicit differentiation, and applications to the sciences; the mean value theorem; and antiderivatives, definite and indefinite integrals, the fundamental theorem of calculus, and the area under a curve.",
+            "raw": "MATH 1110 - Calculus I\n(SMR-AS)\nFall, Spring, Summer.  4 credits. Student option grading.\nForbidden Overlap: due to an overlap in content, students will not receive credit for both\nMATH 1106\nand MATH 1110.\nPrerequisite: three years of high school mathematics (including trigonometry and logarithms) or a precalculus course (e.g.,\nMATH 1101\n). MATH 1110 can serve as a one-semester introduction to calculus or as part of a two-semester sequence in which it is followed by\nMATH 1120\n. For guidance in selecting an appropriate course, please consult\nFirst Steps in Math\n.\nStaff.\nTopics include functions and graphs, limits and continuity, differentiation and integration of algebraic, trigonometric, inverse trig, logarithmic, and exponential functions; applications of differentiation, including graphing, max-min problems, tangent line approximation, implicit differentiation, and applications to the sciences; the mean value theorem; and antiderivatives, definite and indefinite integrals, the fundamental theorem of calculus, and the area under a curve.",
+            "all_prereqs": [
+                "MATH 1101"
+            ],
+            "prereq_tree": {
+                "MATH 1101": {
+                    "name": "MATH 1101 - Calculus Preparation",
+                    "crosslisted": [],
+                    "distributions": [],
+                    "seasons_offered": [
+                        "Fall"
+                    ],
+                    "credits": 2,
+                    "grading": "Letter grades only",
+                    "forbidden_overlaps": [
+                        "MATH 1101"
+                    ],
+                    "forbidden_overlaps_str": "",
+                    "prerequisites": [],
+                    "prerequisites_str": "",
+                    "remaining_text": "Staff. Introduces topics in calculus: limits, rates of change, definition of and techniques for finding derivatives, relative and absolute extrema, and applications. The calculus content of the course is similar to 1/3 of the content covered in MATH 1106 and MATH 1110 . In addition, the course includes a variety of topics of algebra, with emphasis on the development of linear, power, exponential, logarithmic, and trigonometric functions. Because of the strong emphasis on graphing, students will have a better understanding of asymptotic behavior of these functions.",
+                    "raw": "MATH 1101 - Calculus Preparation\nFall.  2 credits. Letter grades only.\nStaff.\nIntroduces topics in calculus: limits, rates of change, definition of and techniques for finding derivatives, relative and absolute extrema, and applications. The calculus content of the course is similar to 1/3 of the content covered in\nMATH 1106\nand\nMATH 1110\n. In addition, the course includes a variety of topics of algebra, with emphasis on the development of linear, power, exponential, logarithmic, and trigonometric functions. Because of the strong emphasis on graphing, students will have a better understanding of asymptotic behavior of these functions.",
+                    "all_prereqs": [],
+                    "prereq_tree": {}
+                }
+            }
+        },
+        "MATH 1106": {
+            "name": "MATH 1106 - Modeling with Calculus for the Life Sciences",
+            "crosslisted": [],
+            "distributions": [
+                "SMR-AS"
+            ],
+            "seasons_offered": [
+                "Spring"
+            ],
+            "credits": 4,
+            "grading": "Student option grading",
+            "forbidden_overlaps": [
+                "MATH 1106",
+                "MATH 1110"
+            ],
+            "forbidden_overlaps_str": "Forbidden Overlap: due to an overlap in content, students will not receive credit for both MATH 1106 and MATH 1110 .",
+            "prerequisites": [
+                "MATH 1101"
+            ],
+            "prerequisites_str": "Prerequisite: three years of high school mathematics (including trigonometry and logarithms) or a precalculus course (e.g., MATH 1101 ).",
+            "remaining_text": "No prior knowledge of calculus is required. Students who plan to take more than one semester of calculus should take MATH 1110 rather than MATH 1106. For guidance in selecting an appropriate course, please consult First Steps in Math . Staff. The goal of this course is to give students a strong basis in some quantitative skills needed in the life and social sciences. There will be an emphasis on modeling, using fundamental concepts from calculus developed in the course, including: derivatives, integrals, and introductory differential equations. Examples from the life sciences are used throughout the course. To give a concrete example, we will study predator-prey populations. We will write down mathematical models that describe the evolution of these populations, analyze both quantitative and qualitative properties to make predictions about the future of these populations, and discuss the assumptions and limitations of the models. Note that while we will cover the topics of derivatives and integrals, this course has a different, much more applied, focus from courses such as MATH 1110 or a typical high school calculus course.",
+            "raw": "MATH 1106 - Modeling with Calculus for the Life Sciences\n(SMR-AS)\nSpring.  4 credits. Student option grading.\nForbidden Overlap: due to an overlap in content, students will not receive credit for both MATH 1106 and\nMATH 1110\n.\nPrerequisite: three years of high school mathematics (including trigonometry and logarithms) or a precalculus course (e.g.,\nMATH 1101\n). No prior knowledge of calculus is required. Students who plan to take more than one semester of calculus should take\nMATH 1110\nrather than MATH 1106. For guidance in selecting an appropriate course, please consult\nFirst Steps in Math\n.\nStaff.\nThe goal of this course is to give students a strong basis in some quantitative skills needed in the life and social sciences. There will be an emphasis on modeling, using fundamental concepts from calculus developed in the course, including: derivatives, integrals, and introductory differential equations. Examples from the life sciences are used throughout the course. To give a concrete example, we will study predator-prey populations. We will write down mathematical models that describe the evolution of these populations, analyze both quantitative and qualitative properties to make predictions about the future of these populations, and discuss the assumptions and limitations of the models. Note that while we will cover the topics of derivatives and integrals, this course has a different, much more applied, focus from courses such as\nMATH 1110\nor a typical high school calculus course.",
+            "all_prereqs": [
+                "MATH 1101"
+            ],
+            "prereq_tree": {
+                "MATH 1101": {
+                    "name": "MATH 1101 - Calculus Preparation",
+                    "crosslisted": [],
+                    "distributions": [],
+                    "seasons_offered": [
+                        "Fall"
+                    ],
+                    "credits": 2,
+                    "grading": "Letter grades only",
+                    "forbidden_overlaps": [
+                        "MATH 1101"
+                    ],
+                    "forbidden_overlaps_str": "",
+                    "prerequisites": [],
+                    "prerequisites_str": "",
+                    "remaining_text": "Staff. Introduces topics in calculus: limits, rates of change, definition of and techniques for finding derivatives, relative and absolute extrema, and applications. The calculus content of the course is similar to 1/3 of the content covered in MATH 1106 and MATH 1110 . In addition, the course includes a variety of topics of algebra, with emphasis on the development of linear, power, exponential, logarithmic, and trigonometric functions. Because of the strong emphasis on graphing, students will have a better understanding of asymptotic behavior of these functions.",
+                    "raw": "MATH 1101 - Calculus Preparation\nFall.  2 credits. Letter grades only.\nStaff.\nIntroduces topics in calculus: limits, rates of change, definition of and techniques for finding derivatives, relative and absolute extrema, and applications. The calculus content of the course is similar to 1/3 of the content covered in\nMATH 1106\nand\nMATH 1110\n. In addition, the course includes a variety of topics of algebra, with emphasis on the development of linear, power, exponential, logarithmic, and trigonometric functions. Because of the strong emphasis on graphing, students will have a better understanding of asymptotic behavior of these functions.",
+                    "all_prereqs": [],
+                    "prereq_tree": {}
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "name": "CS 1110 - Introduction to Computing: A Design and Development Perspective",
+    "crosslisted": [],
+    "distributions": [
+        "SMR-AS"
+    ],
+    "seasons_offered": [
+        "Fall",
+        "Spring",
+        "Summer"
+    ],
+    "credits": 4,
+    "grading": "Fall, Summer: letter grades only (no audit); Spring: student option grading (no audit)",
+    "forbidden_overlaps": [
+        "CS 1110",
+        "CS 1112"
+    ],
+    "forbidden_overlaps_str": "Forbidden Overlap: due to an overlap in content, students will not receive credit for both CS 1110 and CS 1112.",
+    "prerequisites": [],
+    "prerequisites_str": "",
+    "remaining_text": "Students may not enroll in CS 1110 if they have taken or are also enrolled in CS 2110 / ENGRD 2110 , CS 2112 , or have taken or are currently enrolled in a course offered or cross-listed with a CS number 3000 or above. (Students looking to learn Python rather than learn how to program should take CS 1133 instead.) Students who have affiliated with the computer-science major may not enroll. Assumes basic high school mathematics. No calculus or programming experience required. Fall: W. White; Spring: Staff; Summer: Staff. Programming and problem solving using Python. Emphasizes principles of software development, style, and testing. Topics include procedures and functions, iteration, recursion, arrays and vectors, strings, an operational model of procedure and function calls, algorithms, exceptions, object-oriented programming. Weekly labs provide guided practice on the computer, with staff present to help. Outcome 1: Be fluent in the use of procedural statements -assignments, conditional statements, loops, method calls- and  arrays. Outcome 2: Be able to design, code, and test small Python programs that meet requirements expressed in English. This includes a basic understanding of top-down design. Outcome 3: Understand the concepts of object-oriented programming as used in Python: classes, subclasses, inheritance, and overriding. Outcome 4: Have knowledge of basic searching and sorting algorithms. Have knowledge of the basics of vector computation.",
+    "raw": "CS 1110 - Introduction to Computing: A Design and Development Perspective\n(SMR-AS)\nFall, Spring, Summer.  4 credits. Fall, Summer: letter grades only (no audit); Spring: student option grading (no audit).\nForbidden Overlap: due to an overlap in content, students will not receive credit for both CS 1110 and CS 1112. Students may not enroll in CS 1110 if they have taken or are also enrolled in\nCS 2110\n/\nENGRD 2110\n,\nCS 2112\n, or have taken or are currently enrolled in a course offered or cross-listed with a CS number 3000 or above. (Students looking to learn Python rather than learn how to program should take\nCS 1133\ninstead.) Students who have affiliated with the computer-science major may not enroll.\nAssumes basic high school mathematics. No calculus or programming experience required.\nFall: W. White; Spring: Staff; Summer: Staff.\nProgramming and problem solving using Python. Emphasizes principles of software development, style, and testing. Topics include procedures and functions, iteration, recursion, arrays and vectors, strings, an operational model of procedure and function calls, algorithms, exceptions, object-oriented programming. Weekly labs provide guided practice on the computer, with staff present to help.\nOutcome 1: Be fluent in the use of procedural statements -assignments, conditional statements, loops, method calls- and  arrays.\nOutcome 2: Be able to design, code, and test small Python programs that meet requirements expressed in English. This includes a basic understanding of top-down design.\nOutcome 3: Understand the concepts of object-oriented programming as used in Python: classes, subclasses, inheritance, and overriding.\nOutcome 4: Have knowledge of basic searching and sorting algorithms. Have knowledge of the basics of vector computation.",
+    "all_prereqs": [],
+    "prereq_tree": {}
+}
