@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify, render_template
 from course_lookup import *
+from course_lookup import _process_forbidden_overlaps
 import networkx as nx
 
 app = Flask(__name__)
@@ -37,12 +38,19 @@ def submit_data():
             prereq_nodes, prereq_edges = get_data(details['prereq_tree'])
             
             course_edges.update(prereq_edges)
-            course_edges.update([f"{prereq_node}-{course_id}" for prereq_node in prereq_nodes])
+            course_edges.update([f"{prereq_node}-{course_id}" for prereq_node in details['prereq_tree'].keys()])
             course_nodes.update(prereq_nodes)
             
         return course_nodes, course_edges
         
     nodes, edges = get_data(prereq_tree)
+    edges = [tuple(edge.split('-')) for edge in sorted(edges)]
+    for node in nodes:
+        print(node)
+    for edge in edges:
+        print(edge)
+    # edges = list(filter(lambda x: x[0] not in nodes or x[1] not in nodes, edges))
+
 
     def dag_from_ne(nodes, edges):
         G = nx.DiGraph()
@@ -66,11 +74,7 @@ def submit_data():
         G.add_edges_from(edges)
         return G
     
-    graph = dag_from_ne(sorted(nodes), [tuple(edge.split('-')) for edge in sorted(edges)])
-
-    for node in graph.nodes():
-        print("Name : " + str(graph.nodes[node]))
-        
+    graph = dag_from_ne(sorted(nodes), edges)
 
     returned_data = {
         "nodes" : [{'id' : node, 'label' : node, 'name' : graph.nodes[node].get('name'), 'details' : graph.nodes[node].get('description')}  for node in graph.nodes()],

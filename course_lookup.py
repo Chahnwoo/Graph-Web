@@ -242,3 +242,31 @@ def get_course_details(
         json_file.close()
 
     return extracted_data
+
+def _process_forbidden_overlaps(courses : List[str]):
+    """A function to reduce the forbidden overlaps of each course in the list of courses.
+    
+    Args:
+        courses (List[Course]): A list of Course objects
+    
+    Returns:
+        course_list (List[str]): A str list of reduced courses.
+    """
+
+    index = 0
+    while index < len(courses):
+        course = courses[index]
+        forbidden_overlap = get_course_details(base_str_to_course(courses[index]))['forbidden_overlaps']
+        # The forbidden overlap data for a course will include the course itself. Exclude this from removal
+        # print(f"> Course : {courses[index].base_str}")
+
+        while course in forbidden_overlap:
+            forbidden_overlap.remove(course)
+
+        print(f"> Forbidden overlap : " + (', ').join(forbidden_overlap))
+        for forbidden in forbidden_overlap:
+            while forbidden in courses:
+                courses.remove(forbidden)
+
+        index += 1
+    return sorted(courses)

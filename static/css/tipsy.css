@@ -1,18 +1,18 @@
 .tipsy .name {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
     color: #60b1fc;
     margin: 0;
 }
 
 .tipsy .description {
-    font-size: 2.4em;
+    font-size: 1.5em;
     color: #fff;
     text-align: left;
 }
 
 .tipsy { font-size: 10px; position: absolute; padding: 5px; z-index: 100000; }
-.tipsy-inner { background-color: #444; color: #FFF; max-width: 1000px; padding: 5px 8px 4px 8px; text-align: center; }
+.tipsy-inner { background-color: #444; color: #FFF; max-width: 750px; padding: 5px 8px 4px 8px; text-align: center; }
 
 .tipsy-inner { border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
 
