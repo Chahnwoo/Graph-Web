@@ -5,17 +5,6 @@ import networkx as nx
 
 app = Flask(__name__)
 
-COURSE_DESCRIPTION = '''{name}
-
-[Crosslisted] {crosslisted}
-[Distributions] {distributions}
-[Seasons Offered] {seasons_offered}
-[Credits] {credits}
-
-{body}
-'''
-
-
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -34,29 +23,21 @@ def submit_data():
 
         for course_id, details in prereq_tree.items():
             course_nodes.add(course_id)
-
-            prereq_nodes, prereq_edges = get_data(details['prereq_tree'])
-            
-            course_edges.update(prereq_edges)
             course_edges.update([f"{prereq_node}-{course_id}" for prereq_node in details['prereq_tree'].keys()])
+            prereq_nodes, prereq_edges = get_data(details['prereq_tree'])
             course_nodes.update(prereq_nodes)
+            course_edges.update(prereq_edges)
             
         return course_nodes, course_edges
         
     nodes, edges = get_data(prereq_tree)
     edges = [tuple(edge.split('-')) for edge in sorted(edges)]
-    for node in nodes:
-        print(node)
-    for edge in edges:
-        print(edge)
-    # edges = list(filter(lambda x: x[0] not in nodes or x[1] not in nodes, edges))
-
 
     def dag_from_ne(nodes, edges):
         G = nx.DiGraph()
         for node in nodes:
             data = get_course_details(base_str_to_course(node))
-            body_text = [data['forbidden_overlaps_str'], data['prerequisites_str'], data['remaining_text']]
+            body_text = ('\n\n').join([text for text in [data['forbidden_overlaps_str'], data['prerequisites_str'], data['remaining_text']] if text.strip() != ''])
             
             G.add_node(
                 node, 
@@ -68,8 +49,8 @@ def submit_data():
                     seasons_offered = (', ').join(data['seasons_offered']) if len(data['seasons_offered']) > 0 else "None",
                     credits = data['credits'],
                     grading = data['grading'],
-                    body = ('\n\n').join([text for text in body_text if text.strip() != '']),
-                ).replace('\n', '<br>')
+                    body = body_text,
+                ).replace('\n', '<br>') # HTML formatting for new lines
             )
         G.add_edges_from(edges)
         return G
@@ -81,11 +62,6 @@ def submit_data():
         "edges" : [{'source' : u, 'target' : v} for u, v in graph.edges()]
     }
     return jsonify(returned_data)
-
-if __name__ == '__main__':
-    app.run(debug=True)
-
-
 
 if __name__ == '__main__':
     app.run(debug=True)

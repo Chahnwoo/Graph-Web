@@ -26,6 +26,16 @@ COURSE_RE = r'[A-Z]+ [1-4]{1}[0-9]{3}'
 COURSE_FOLDER = os.getcwd() + os.sep + 'course_jsons' + os.sep + '{subject}'
 COURSE_FILE_PATH = os.getcwd() + os.sep + 'course_jsons' + os.sep + '{subject}' + os.sep + '{subject}_{number}.json'
 
+COURSE_DESCRIPTION = '''{name}
+
+[Crosslisted] {crosslisted}
+[Distributions] {distributions}
+[Seasons Offered] {seasons_offered}
+[Credits] {credits}
+
+{body}
+'''
+
 #######################################################################################################################################################
 #                                                                                                                                                     #
 #                                                                       METHODS                                                                       #
