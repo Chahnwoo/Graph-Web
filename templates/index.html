@@ -14,21 +14,28 @@
     </style>
 </head>
 <body>
-    <h1>Graph Visualization</h1>
-    <form id="graph-form" action="/submit" method="POST">
-        <input type="text" id="graph-input" name="graph-input" placeholder="Enter Course ID">
-        <button type="submit">Fetch and Visualize Graph</button>
-        <button type="button" onclick="removeGraph()">Remove Graph</button>
-    </form>
-    <div id="graph-container">
-        <svg id="svg-canvas"></svg>
+    <div id="padded_group">
+        <h1>Graph Visualization</h1>
+        
+        <form id="graph-form" action="/submit" method="POST">
+            <div>
+                <input id="course_id" type="text" id="graph-input" name="graph-input" placeholder="Enter Course ID">
+            </div>
+            <div>
+                <button id="submit_button" type="submit">Fetch and Visualize Graph</button>
+                <button id="remove_button" type="button" onclick="removeGraph()">Remove Graph</button>
+                <button id="plan_courses" onclick="location.href='/plan'">Plan My Courses</button>
+            </div>
+        </form>
+
+        <div id="graph-container">
+            <svg id="svg-canvas"></svg>
+        </div>
     </div>
-    <div id="chart"></div>
-    
     <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script> 
     <script src="../static/js/d3.v7.js"></script>
     <script src="../static/js/jquery.tipsy.js"></script>
-    <script src="../static/js/scripts.js"></script>
+    <script src="../static/js/scripts_index.js"></script>
     <script src="../static/js/dagre-d3.js"></script>
     <link href="../static/css/tipsy.css" rel="stylesheet" type="text/css" />
 </body>

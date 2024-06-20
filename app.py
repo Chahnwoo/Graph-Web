@@ -9,6 +9,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/plan')
+def plan():
+    return render_template('plan.html')
+
 @app.route('/submit', methods=['POST'])
 def submit_data():
     graph_input = request.form['graph-input']  # Retrieve input data from form
@@ -32,30 +36,24 @@ def submit_data():
         
     nodes, edges = get_data(prereq_tree)
     edges = [tuple(edge.split('-')) for edge in sorted(edges)]
-
-    def dag_from_ne(nodes, edges):
-        G = nx.DiGraph()
-        for node in nodes:
-            data = get_course_details(base_str_to_course(node))
-            body_text = ('\n\n').join([text for text in [data['forbidden_overlaps_str'], data['prerequisites_str'], data['remaining_text']] if text.strip() != ''])
-            
-            G.add_node(
-                node, 
-                name = data['name'],
-                description = COURSE_DESCRIPTION.format(
-                    name = data['name'],
-                    crosslisted = (', ').join(data['crosslisted']) if len(data['crosslisted']) > 0 else "None",
-                    distributions = (', ').join(data['distributions']) if len(data['distributions']) > 0 else "None",
-                    seasons_offered = (', ').join(data['seasons_offered']) if len(data['seasons_offered']) > 0 else "None",
-                    credits = data['credits'],
-                    grading = data['grading'],
-                    body = body_text,
-                ).replace('\n', '<br>') # HTML formatting for new lines
-            )
-        G.add_edges_from(edges)
-        return G
     
     graph = dag_from_ne(sorted(nodes), edges)
+
+    returned_data = {
+        "nodes" : [{'id' : node, 'label' : node, 'name' : graph.nodes[node].get('name'), 'details' : graph.nodes[node].get('description')}  for node in graph.nodes()],
+        "edges" : [{'source' : u, 'target' : v} for u, v in graph.edges()]
+    }
+    return jsonify(returned_data)
+
+@app.route('/graph-courses', methods=['POST'])
+def graph_courses():
+    data = request.get_json()
+    courses = data.get('courses', [])
+
+    print(type(courses[0]))
+
+    nodes, edges = courses_as_graph([base_str_to_course(course_text) for course_text in courses])
+    graph = dag_from_ne(nodes, edges)
 
     returned_data = {
         "nodes" : [{'id' : node, 'label' : node, 'name' : graph.nodes[node].get('name'), 'details' : graph.nodes[node].get('description')}  for node in graph.nodes()],

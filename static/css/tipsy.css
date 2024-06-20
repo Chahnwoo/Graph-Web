@@ -1,3 +1,21 @@
+.node circle {
+    fill: #888;
+    stroke-width: 1.5px;
+}
+
+.node text {
+    font-weight: 300;
+    font-family: sans-serif;
+    font-size: 14px;
+    fill: #fff; /* Use fill instead of color for SVG text */
+}
+
+.edgePath path {
+    stroke: #444;
+    stroke-width: 1.5px;
+    fill: none;
+}
+
 .tipsy .name {
     font-size: 2em;
     font-weight: bold;
