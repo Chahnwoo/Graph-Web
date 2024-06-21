@@ -17,8 +17,8 @@ function addCourse() {
     courseBox.className = 'course-box';
     courseBox.id = `courseBox-${courseCounter}`;
     courseBox.innerHTML = `
-        <p>${courseTitle}</p>
-        <button onclick="removeCourse('${courseCounter}')">Remove</button>
+        <p class="reduced-margin">${courseTitle}</p>
+        <button class onclick="removeCourse('${courseCounter}')">Remove</button>
     `;
 
     courseContainer.appendChild(courseBox);

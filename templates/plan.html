@@ -4,33 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/plan.css') }}">
 
     <title>Plan My Courses</title>
-    <style>
-        .course-container {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .course-box {
-            width: 12.5%; /* 1/8th of the width */
-            border: 1px solid black;
-            margin: 5px;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-        #graphButton {
-            margin-top: 20px;
-        }
-    </style>
 </head>
 <body>
     <div id="padded_group">
         <h1>Plan My Courses</h1>
         <button onclick="location.href='/'">Home</button>
-        <input type="text" id="courseInput" placeholder="Course ID" onkeydown="handleEnter(event)">
-        <button onclick="addCourse()">Add Course</button>
+        <div id="course_crud">
+            <input type="text" id="courseInput" placeholder="Course ID" onkeydown="handleEnter(event)">
+            <div>
+                <button onclick="addCourse()">Add Course</button>
+                <button id="graphButton" onclick="graphCourses()">Graph Courses</button>
+            </div>
+        </div>
+
         <div class="course-container" id="courseContainer"></div>
-        <button id="graphButton" onclick="graphCourses()">Graph Courses</button>
 
         <div id="graph-container">
             <svg id="svg-canvas"></svg>

@@ -1,0 +1,46 @@
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.course-box {
+    flex: 1; /* 1/8th of the width */
+    background-color: gainsboro;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+    .reduced-margin {
+        width: 100%;
+        height : 20px;
+        text-wrap: nowrap;
+    };
+    
+    button {
+        width: 100%;
+    };
+}
+
+#course_crud {
+    align-items:center;
+    flex-direction: column;
+    display : flex;
+    gap: 5px;
+
+    div {
+        display : flex;
+        gap : 5px;
+        width : 100%;
+        button {
+            flex: 1;  
+        };
+    }
+
+}
+
+.reduced-margin {
+    margin-top: 5px;
+}
