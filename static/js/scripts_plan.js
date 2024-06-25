@@ -7,24 +7,47 @@ function addCourse() {
     const courseTitle = courseInput.value.toUpperCase().trim();
 
     if (courseTitle === "") {
-        alert("Course title cannot be empty!");
+        alert("Course ID cannot be empty!");
         return;
     }
 
-    const courseContainer = document.getElementById('courseContainer');
+    fetch('/check-course-exists', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ courseTitle })
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        } 
+        return response.json();
+    })
+    .then(data => {
+        if (data.exists) {
+            console.log('Existing Course ID : ', data.exists)
 
-    const courseBox = document.createElement('div');
-    courseBox.className = 'course-box';
-    courseBox.id = `courseBox-${courseCounter}`;
-    courseBox.innerHTML = `
-        <p class="reduced-margin">${courseTitle}</p>
-        <button class onclick="removeCourse('${courseCounter}')">Remove</button>
-    `;
+            const courseContainer = document.getElementById('courseContainer');
+        
+            const courseBox = document.createElement('div');
+            courseBox.className = 'course-box';
+            courseBox.id = `courseBox-${courseCounter}`;
+            courseBox.innerHTML = `
+                <p class="reduced-margin">${courseTitle}</p>
+                <button class onclick="removeCourse('${courseCounter}')">Remove</button>
+            `;
+        
+            courseContainer.appendChild(courseBox);
+        
+            courseCounter++;
+            courseInput.value = ""; // Clear the input box
+        } else {
+            alert("Not a valid Course ID")
+        }
+    })
 
-    courseContainer.appendChild(courseBox);
 
-    courseCounter++;
-    courseInput.value = ""; // Clear the input box
 }
 
 function removeCourse(courseId) {

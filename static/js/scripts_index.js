@@ -1,24 +1,47 @@
 document.getElementById("graph-form").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent default form submission
 
-    const formData = new FormData(this); // Get form data
+    removeGraph()
 
-    // Send POST request to Flask server
-    fetch('/submit', {
+    const formData = new FormData(this); // Get form data
+    courseTitle = formData.get('graph-input').toUpperCase()
+    console.log(courseTitle)
+
+    fetch('/check-course-exists', {
         method: 'POST',
-        body: formData
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ courseTitle })
     })
-    .then(response => response.json())
-    .then(graphData => {
-        visualizeGraph(graphData);
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        } 
+        return response.json();
     })
-    .catch(error => console.error('Error fetching graph data:', error));
+    .then(data => {
+        if (data.exists) {
+            // Send POST request to Flask server
+            fetch('/submit', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(graphData => {
+                visualizeGraph(graphData);
+            })
+            .catch(error => console.error('Error fetching graph data:', error));
+        } else {
+            alert("Not a valid Course ID")
+        }
+    })
+
+
 });
 
 
 function visualizeGraph(graphData) {
-    removeGraph()
-    // // Clear previous graph
     // d3.select("#graphContainer").selectAll("*").remove();
 
     // Add nodes to the graph

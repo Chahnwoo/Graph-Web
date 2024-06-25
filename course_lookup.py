@@ -161,47 +161,6 @@ def parse_course_data(
 
     for i, split in enumerate(remaining_splits):
         print(f"Split {str(i + 1)} : {split}")
-    
-
-
-    # print(br_tag_indices)
-    # bs_tags = list(filter(lambda elem: elem.get_text().strip() != '', course_details))
-    # bs_texts = [tag.get_text().strip() for tag in bs_tags]
-
-    # crosslisted = []
-    # distributions = []
-    # cross_dist_text = ('\n').join([text.strip() for text in bs_texts[:course_offering_index]])
-    # crosslisted = re.findall(COURSE_RE, cross_dist_text, re.IGNORECASE)
-    # distributions = re.findall(r'\(([A-Z]+-[A-Z]+[, ]*)+\)', cross_dist_text, re.IGNORECASE)
-    
-    # remaining_text = (' ').join([text.strip() for text in bs_texts[course_offering_index + 1:]])
-    # print(remaining_text)
-    # # Obtain forbidden overlaps as text
-    # forbidden_re = 
-    # forbidden_str = ''
-    # forbidden_overlaps = set([f'{course_subject} {str(course_number)}'])
-    # try:
-    #     forbidden_str = re.findall(forbidden_re, remaining_text, re.DOTALL | re.IGNORECASE)[0].strip()
-    #     forbidden_overlaps.update(re.findall(COURSE_RE, forbidden_str))
-    # except:
-    #     pass
-
-    # prereq_re = r'Prerequisite.*?\.\s'
-    # prereq_str = ''
-    # prerequisites = []
-    # try:    
-    #     prereq_str = re.findall(prereq_re, remaining_text, re.DOTALL | re.IGNORECASE)[0].strip()
-    #     prerequisites = [x for x in re.findall(COURSE_RE, prereq_str)]
-    # except:
-    #     pass
-
-    # try:
-    #     forbidden_split = re.split(forbidden_re, remaining_text)
-    #     remaining_text = ('\n').join([text.strip() for text in forbidden_split if text.strip() != ''])
-    #     prereq_split = re.split(prereq_re, remaining_text)
-    #     remaining_text = ('\n').join([text.strip() for text in prereq_split if text.strip() != ''])
-    # except:
-    #     pass
 
     return {
         'name': course_name,
@@ -398,3 +357,23 @@ def dag_from_ne(nodes, edges):
         )
     G.add_edges_from(edges)
     return G
+
+def course_exists(
+    subject : str,
+    number : str
+):
+    course_file_path = COURSE_FILE_PATH.format(subject = subject, number = str(number))
+
+    if os.path.exists(course_file_path):
+        return True
+
+    url = COURSE_SEARCH_2024_2025.format(subject_code = SUBJECTS[subject.upper()]['code'], code_or_number = str(number))
+    response = requests.get(url)
+    soup = BeautifulSoup(response.content, 'html.parser')
+    course_links = list(filter(lambda x: f'{subject} {str(number)}' in x.text, soup.find_all('a')))
+        
+    # If no link corresponding to the searched subject can be found, return False
+    if len(course_links) > 0:
+        return True
+    else:
+        return False

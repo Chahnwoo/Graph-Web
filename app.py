@@ -61,5 +61,17 @@ def graph_courses():
     }
     return jsonify(returned_data)
 
+@app.route('/check-course-exists', methods=['POST'])
+def check_course_exists():
+    course_id = request.get_json()['courseTitle']
+    course_id = course_id.split(' ')
+    exists = None
+    if len(course_id) != 2:
+        exists = False
+    else:
+        subject, number = tuple(course_id)
+        exists = course_exists(subject, number)
+    return jsonify({'exists' : exists})
+
 if __name__ == '__main__':
     app.run(debug=True)
